@@ -4,6 +4,8 @@ f = str2func(['@(x) ', eq]);
 tol = input('Enter tolerance: ');
 itr = 30;
 results = [];
+
+%Root calculation
 for i = 1:5
   a = input('Enter first interval: ');
   b = input('Enter second interval: ');
@@ -25,6 +27,12 @@ for i = 1:itr
     a = c;
   end
 end
+
+fprintf('Root is %0.4f\n', c);
+disp('Calculated roots in each iteration:');
+disp(results');
+
+%Graph visualization
 x = 0:0.1:10;
 hold on
 plot(x, f(x));
@@ -37,7 +45,5 @@ ylabel('Y');
 axisLabelFontSize = 12;
 set(gca, 'FontSize', axisLabelFontSize);
 set(gca, 'xAxisLocation', 'origin');
-fprintf('Root is %0.4f\n', c);
-disp('Calculated roots in each iteration:');
-disp(results');
+
 
