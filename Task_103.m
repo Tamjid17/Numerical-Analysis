@@ -35,7 +35,7 @@ disp(results');
 
 %Graph visualization
 x = 0:0.1:10;
-hold on
+hold on;
 plot(x, f(x));
 plot(c, f(c), 'xr');
 title([eq, ' = 0']);
