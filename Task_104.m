@@ -36,7 +36,7 @@ end
 
 fprintf('Root is %0.4f\n', c);
 disp('Calculated roots in each iteration:');
-disp(results);
+disp(results');
 
 %Graph visualization
 x = 0:0.1:10;

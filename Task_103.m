@@ -34,7 +34,7 @@ disp('Calculated roots in each iteration:');
 disp(results');
 
 %Graph visualization
-x = 0:0.1:10;
+x = 0:0.1:5;
 hold on;
 plot(x, f(x));
 plot(c, f(c), 'xr');
