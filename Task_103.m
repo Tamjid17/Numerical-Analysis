@@ -44,5 +44,6 @@ set(get(gca, 'title'), 'FontSize', titleFontSize);
 axisLabelFontSize = 12;
 set(gca, 'FontSize', axisLabelFontSize);
 set(gca, 'xAxisLocation', 'origin');
+legend('Function values ', 'Root');
 
 

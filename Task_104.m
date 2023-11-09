@@ -49,5 +49,6 @@ set(get(gca, 'title'), 'FontSize', titleFontSize);
 axisLabelFontSize = 12;
 set(gca, 'FontSize', axisLabelFontSize);
 set(gca, 'xAxisLocation', 'origin');
+legend('Function values ', 'Root');
 fprintf('Root is %0.3f\n', c);
 disp(results');
