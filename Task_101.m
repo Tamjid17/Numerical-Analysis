@@ -4,7 +4,7 @@ r = rows(b);
 c = columns(a);
 
 %Max value of first matrix
-d = max(a);
+d = max(a(:));
 fprintf('Max value of A matrix: %d\n', d);
 
 %Matrix Multiplication
