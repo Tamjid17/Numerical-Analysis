@@ -9,7 +9,7 @@ results = [];
 for i = 1:5
   a = input('Enter first interval: ');
   b = input('Enter second interval: ');
-  if f(a)*f(b) < 0
+  if f(a)*f(b) < 0b
     break;
   else
     fprintf('No root between given intervals.\n')
